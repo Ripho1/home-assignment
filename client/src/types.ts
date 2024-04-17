@@ -4,6 +4,7 @@ export type PostData = {
   content: string;
   date: string;
   imageUrl?: string;
+  likes?: number;
 };
 
 export type UserData = {
@@ -11,3 +12,5 @@ export type UserData = {
   name: string;
   avatar?: string;
 };
+
+export type NewPost = Partial<PostData>;

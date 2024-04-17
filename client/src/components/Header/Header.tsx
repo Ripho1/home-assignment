@@ -12,17 +12,19 @@ import { UserAvatar } from "../UserAvatar";
 
 type HeaderProps = {
   openPostEditor: () => void;
+  activeUser?: UserData;
+  changeUser?: () => void;
 };
 
-export const Header: React.FC<HeaderProps> = ({ openPostEditor }) => {
-  const user: UserData = { id: 0, name: "" }; // CHANGE ME
+export const Header: React.FC<HeaderProps> = ({ openPostEditor, changeUser, activeUser }) => {
+  const user: UserData = activeUser || dummyUser;
 
   return (
     <AppBar position="static">
       <Toolbar disableGutters className="app-toolbar">
         <Tooltip title="Switch User">
-          <IconButton>
-            <UserAvatar user={user} className="user-avatar" />
+          <IconButton onClick={changeUser}>
+            <UserAvatar user={user} className="user-avatar"/>
           </IconButton>
         </Tooltip>
         <div>
@@ -42,3 +44,5 @@ export const Header: React.FC<HeaderProps> = ({ openPostEditor }) => {
     </AppBar>
   );
 };
+
+const dummyUser: UserData = { id: 0, name: "" };

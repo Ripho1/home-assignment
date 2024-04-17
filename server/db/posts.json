@@ -4,13 +4,15 @@
     "userId": 1,
     "date": "1999-05-13T08:09:50.083Z",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat enim Polemonis. Hoc tu nunc in illo probas. Sed ne, dum huic obsequor, vobis molestus sim. Nemo igitur esse beatus potest. Sed ad bona praeterita redeamus.",
-    "imageUrl": "https://static.wikia.nocookie.net/arthur/images/8/89/Arthur_Summer.png"
+    "imageUrl": "https://static.wikia.nocookie.net/arthur/images/8/89/Arthur_Summer.png",
+    "likes": 0
   },
   {
     "id": 1001,
     "userId": 2,
     "date": "1997-07-15T19:16:50.543Z",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Sed virtutem ipsam inchoavit, nihil amplius. Sed quae tandem ista ratio est?"
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Sed virtutem ipsam inchoavit, nihil amplius. Sed quae tandem ista ratio est?",
+    "likes": 0
   },
   {
     "id": 1002,
