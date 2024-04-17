@@ -7,7 +7,9 @@ app.use(cors());
 app.use(express.json());
 const port = 3000;
 
-app.get("/", (req: Request, res: Response) => {
+app.use(express.static("dist"));
+
+app.get("/check", (req: Request, res: Response) => {
   res.send("Server is up!");
 });
 
